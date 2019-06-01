@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+           
+          int N,Amount,i,cnt_rat=0,cnt_frog=0,cnt_rabbit=0,sum=0;
+          double avg_rat=0.0,avg_rabbit=0.0,avg_frog=0.0;
+          char Type;
+          
+          cout << fixed << setprecision(2);
+          
+          cin>>N;
+          for(i=1;i<=N;i++){
+          	cin>> Amount >> Type ;
+          	switch (Type){
+          		case 'C':
+          			cnt_rabbit += Amount;
+          			break;
+          		case 'R':
+          			cnt_rat += Amount;
+          			break;
+          		case 'S':
+          			cnt_frog += Amount;
+          			break;
+			  }
+		  }
+		  sum = cnt_frog + cnt_rabbit + cnt_rat ;
+		  avg_rabbit = (double)cnt_rabbit / sum *100;
+		  avg_frog = (double)cnt_frog / sum *100;
+		  avg_rat = (double)cnt_rat / sum *100;
+ 
+           cout << "Total: " << sum << " cobaias" << endl;
+           cout << "Total de coelhos: " << cnt_rabbit << endl;
+           cout << "Total de ratos: " << cnt_rat << endl;
+           cout << "Total de sapos: " << cnt_frog << endl;
+           cout << "Percentual de coelhos: " << avg_rabbit << " %" << endl;
+           cout << "Percentual de ratos: " << avg_rat << " %" << endl;
+           cout << "Percentual de sapos: " << avg_frog << " %" << endl;
+           
+           
+    return 0;
+  }
