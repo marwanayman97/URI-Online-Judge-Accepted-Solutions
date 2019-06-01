@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+ 
+  int code_1,code_2,num_1,num_2;
+  double price_1,price_2;
+  
+  cout << fixed << setprecision(2) ;
+  
+  cin>> code_1 >> num_1 >> price_1;
+  
+  cin>> code_2 >> num_2 >> price_2;
+  
+ 
+  cout << "VALOR A PAGAR: R$ " << (num_1 * price_1) + (num_2 * price_2) << endl;
+  
+
+
+
+return 0;
+}
