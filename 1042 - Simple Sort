@@ -1,0 +1,37 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+using namespace std;
+
+int main(){
+ 
+  int X,Y,Z,big,small,mid,temp;
+  
+  
+
+  cin >> X >> Y >> Z;
+  big=X;
+  mid=Y;
+  small=Z;
+  
+  if(mid>big){
+  	temp =big;
+  	big=mid;
+  	mid=temp;
+  }
+  if(small>mid){
+  	temp=mid;
+  	mid=small;
+  	small=temp;
+  }
+  if(mid>big){
+  	temp =big;
+  	big=mid;
+  	mid=temp;
+  }
+  cout<< small << endl << mid << endl << big << endl << endl;
+  cout<< X << endl << Y << endl << Z<< endl;
+  
+  
+  return 0;
+  }
