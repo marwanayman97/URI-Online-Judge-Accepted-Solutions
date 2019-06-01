@@ -1,0 +1,24 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+           
+    int N,mins,secs,hrs;
+    
+    cin>>N;
+    
+    hrs= N/3600;
+    N %= 3600;
+    mins= N/60;
+    N %= 60;
+    secs = N;
+    
+    cout<<hrs<<":"<<mins<<":"<<secs<<endl;
+    
+    
+		   
+      
+    return 0;
+  }
