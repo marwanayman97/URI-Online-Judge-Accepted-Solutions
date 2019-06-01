@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+	
+	int age,count=0;
+	double sum=0.0;
+	
+	
+	cin>>age;
+	
+while(age>0){
+
+	sum += age;
+	count++;
+	
+	cin>>age;
+}
+    cout<< fixed << setprecision(2);
+	cout<<sum/count<<endl;
+	
+	return 0;
+}
