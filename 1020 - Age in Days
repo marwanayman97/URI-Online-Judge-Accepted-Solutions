@@ -1,0 +1,26 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+           
+    int age,rem_y,rem_m,years,months;
+    
+    cin>>age;
+    
+    rem_y=age%365;
+    years=age/365;
+    rem_m=rem_y%30;
+    months=rem_y/30;
+    
+    cout<< years << " ano(s)"<<endl;
+    cout<< months << " mes(es)" <<endl;
+    cout<< rem_m << " dia(s)" <<endl;
+    
+    
+    
+		   
+      
+    return 0;
+  }
