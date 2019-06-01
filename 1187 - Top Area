@@ -1,0 +1,52 @@
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+
+
+int main(){
+ double M[12][12],num,sum=0.0;
+ int cnt=0;
+ char T;
+ 
+ cin>>T;
+ 
+ for(int i=0;i<12;i++){
+ 	for(int j=0;j<12;j++){
+ 		cin>>num;
+ 		 M[i][j]=num;
+	 }
+ }
+ 
+ cout<<fixed<<setprecision(1);
+ if (T=='S'){
+ 	for(int i=0;i<5;i++){
+	 
+ 		for(int k=1;k<11;k++){
+ 		if(k+i<=10 && k>i){
+ 		sum += M[i][k];
+ 		
+ 		}
+	 	}
+	}
+	 cout<<sum<<endl;
+ }else if (T=='M'){
+ 	for(int i=0;i<5;i++){
+	 
+ 		for(int k=1;k<11;k++){
+ 		if(k+i<=10 && k>i){
+ 		sum += M[i][k];
+ 		cnt++;
+ 		}
+	 	}
+	}
+	 double avg = sum / cnt;
+	 cout<<avg<<endl;
+}
+
+
+
+	return 0;
+}
