@@ -1,0 +1,47 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+ 
+ 	string parent,sub,child;
+ 	cin>> parent >> sub >> child;
+ 	
+ 	if(parent=="vertebrado"){
+ 		if(sub=="ave"){
+ 			if(child=="carnivoro"){
+ 				cout<< "aguia" << endl;
+			 }else if(child=="onivoro"){
+			    cout<< "pomba" << endl;
+			 }
+		 }else if(sub=="mamifero"){
+		 	
+		 	if(child=="herbivoro"){
+ 				cout<< "vaca" << endl;
+			 }else if(child=="onivoro"){
+			    cout<< "homem" << endl;
+			 }
+		 	
+		 }
+ 		
+	 }else if(parent=="invertebrado"){
+	 		if(sub=="inseto"){
+ 			if(child=="hematofago"){
+ 				cout<< "pulga" << endl;
+			 }else if(child=="herbivoro"){
+			    cout<< "lagarta" << endl;
+			 }
+		 }else if(sub=="anelideo"){
+		 	
+		 	if(child=="hematofago"){
+ 				cout<< "sanguessuga" << endl;
+			 }else if(child=="onivoro"){
+			    cout<< "minhoca" << endl;
+			 }
+		 	
+		 }
+	 }
+ 
+  return 0;
+  }
