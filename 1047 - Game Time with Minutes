@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+           
+  int initial_hour, initial_minute, final_hour, final_minute, hrs, mins;
+  
+  cin>>initial_hour>>initial_minute>>final_hour>>final_minute;
+  
+  if(final_minute<initial_minute){
+  	final_hour--;
+  	final_minute +=60;
+}
+  if(final_hour>initial_hour && final_minute>initial_minute){
+  	hrs = final_hour-initial_hour;
+  	mins = final_minute - initial_minute;
+  }else if(final_hour==initial_hour && final_minute==initial_minute){
+  	hrs = 24;
+  	mins = 0;
+  }else if (initial_hour>final_hour){
+  	hrs = final_hour-initial_hour+24;
+  	mins = final_minute-initial_minute;
+  }else if(final_hour==initial_hour && final_minute>initial_minute){
+  	hrs = 0;
+  	mins = final_minute-initial_minute;
+  }
+  
+                                
+  
+  cout<< "O JOGO DUROU " << hrs << " HORA(S) E " << mins << " MINUTO(S)" << endl;	   
+      
+    return 0;
+  }
