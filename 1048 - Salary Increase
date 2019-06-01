@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+ double salary,inc,new_salary=0;
+ int rate=0;
+ cin>>salary;
+ cout<< fixed << setprecision(2);
+ 
+ if(salary >= 0 && salary <=400.00){
+ 	new_salary = salary + (salary*0.15);
+ 	inc= new_salary - salary;
+ 	rate=15;
+ }else if(salary > 400 && salary <= 800.00){
+ 	new_salary = salary + (salary*0.12);
+ 	inc= new_salary - salary;
+ 	rate=12;
+ }else if(salary > 800 && salary <= 1200.00){
+ 	new_salary = salary + (salary*0.10);
+ 	inc= new_salary - salary;
+ 	rate=10;
+ }else if(salary > 1200 && salary <= 2000.00){
+ 	new_salary = salary + (salary*0.07);
+ 	inc= new_salary - salary;
+ 	rate=7;
+ }else if(salary>2000){
+ 	new_salary = salary + (salary*0.04);
+ 	inc= new_salary - salary;
+ 	rate=4;
+ }
+ 
+ 
+ cout << "Novo salario: " << new_salary << endl;
+ cout << "Reajuste ganho: " << inc << endl;
+ cout << "Em percentual: " << rate << " %" << endl;
+   
+   
+  return 0;
+  }
