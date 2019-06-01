@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	
+	int x,y,z,p=1;
+	
+	cin>>x>>y;
+	
+	z=y/x;
+	
+	if(x<y){
+		for(int i=0;i<z;i++){
+			for(int j=0;j<x;j++){
+				if(j==x-1){
+					cout<<p<<endl;
+				}
+				else{
+				cout<<p<< " ";
+				}
+				p++;
+			}
+			
+		
+		}
+		
+	}
+	
+	return 0;
+}
