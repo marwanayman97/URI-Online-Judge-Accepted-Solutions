@@ -1,0 +1,33 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main(){
+           
+          int N,X,Y,sum=0;
+          
+          cin>>N;
+          for(int i=1;i<=N;i++){
+          	
+          	cin>>X>>Y;
+          	if(X<Y){
+          		for(int j=X+1;j<Y;j++){
+          			if(j%2!=0){
+          				sum += j;
+					  }
+				  }
+				  
+			  }else if(X>Y){
+			  	for(int k=X-1;k>Y;k--){
+			  		if(k%2!=0){
+			  		sum += k;}
+				  }
+			  }
+			  cout << sum << endl;
+			  sum=0;
+		  }
+          
+           
+    return 0;
+  }
